@@ -44,6 +44,16 @@ body{
     font-size: 2.5rem;
 }
 
+#start-screen p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 .quiz-header {
     margin-bottom: 30px;
 }
@@ -72,4 +82,117 @@ body{
 
 .answer-btn {
     background-color: #f8f0e5;
+    color: #333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.answer-btn:hover {
+    background-color: #eadbc8;
+    color: white;
+    border-color: #e86a33;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.result-screen.active {
+    display: block;
+}
+
+.result-screen h1 {
+    margin-bottom: 20px;
+    color: #e86a33;
+    font-size: 2.5rem;
+}
+
+.result-screen p {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.result-screen .score {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+.answer-btn.correct {
+   
+    color: white;
+    border-color: #4caf50;
+}
+
+.answer-btn.incorrect {
+    background-color: #fff0f0;
+    color: white;
+    border-color: #dc3545;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #f8f0e5;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress{
+    height: 100%;
+    width: 0;
+    background-color: #e86a33;
+    transition: width 0.3s ease;
+}
+
+/* result screen */
+.result-screen h1 {
+    color: #e86a33;
+    margin-bottom: 20px;
+}
+
+.result-info {
+    background-color: #f8f0e5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.result-info p {
+    font-size: 1.2 rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#result-message {
+    font-style: 1.5rem;
+    font-weight: 600;
+    color: #e86a33;
+}
+
+button{
+    background-color: #e86a33;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* responsive design */
+@media (max-width:500px){
+    /* when it hit 500px we use the styles below */
+
+    .screen {
+        padding: 1rem;
+    }
+
+    #start-screen h1 {
+        font-size: 2rem;
+    }
+
+    #start-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
 }
