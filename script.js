@@ -14,3 +14,27 @@ const maxScoreSpan = document.getElementById("max-score");
 const resultMessage = document.getElementById("result-message");
 const restartButton = document.getElementById("restart-btn");
 const progressBar = document.getElementById("progress");
+
+ 
+// the array of questions 
+
+const quizQuestions = [
+    {
+        question: "What is the capital of Timor-Leste?",
+        answers: [
+            {text: "Dili", correct: true },
+            {text: "Abijan", correct: false},
+            {text: "Kamplur", correct: false},
+            {text: "Rabat", correct: false}
+        ],
+    },
+    {
+        question: "What is the chemical symbol for potassium",
+        answers: [
+            {text: "PO", correct: false },
+            {text: "P", correct: false},
+            {text: "K", correct: true},
+            {text: "S", correct: false},
+        ]
+    }
+]
